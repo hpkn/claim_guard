@@ -1,0 +1,92 @@
+{
+  "billed_charges": 2679,
+  "carc": 50,
+  "claim_id": "A-1040",
+  "cpt": "72148",
+  "date_of_service": "2026-07-29",
+  "denial_date": "2026-08-25",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Helen Marsh",
+      "date": "2026-07-21",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 53-year-old woman with low back pain for about two months.",
+        "Denies bowel or bladder changes, fever, weight loss or any history of cancer.",
+        "Referred to physical therapy at the last visit.",
+        "Works as a chef.",
+        "Drinks coffee twice a day.",
+        "Decreased sensation to light touch over the right L5 dermatome.",
+        "Straight leg raise is negative on both sides.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    }
+  ],
+  "expected_payment": 1047,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-3"
+        ],
+        "status": "NOT_FOUND"
+      },
+      "NEURO_DEFICIT": {
+        "accept": [
+          "MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-6"
+        ],
+        "status": "MET"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-7"
+        ],
+        "status": "NOT_MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-2"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": false,
+    "route": "FETCH"
+  },
+  "group": "FETCH",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-07-21",
+  "patient": {
+    "age": 53,
+    "member_id": "BPI-787923",
+    "name": "Pilar Ferraro",
+    "sex": "F"
+  },
+  "payer": "Bluepeak Insurance",
+  "payer_letter": "Bluepeak Insurance has reviewed claim A-1040 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment together with radicular findings or an objective neurological deficit, or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 90 days of this notice.",
+  "policy_id": "BPI-IMG-07",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

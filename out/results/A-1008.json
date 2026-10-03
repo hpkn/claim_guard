@@ -1,0 +1,85 @@
+{
+  "approved_at": null,
+  "approved_by": null,
+  "argument_path": [],
+  "argument_texts": null,
+  "claim_id": "A-1008",
+  "criteria": [
+    {
+      "evidence": [],
+      "id": "RED_FLAG",
+      "reason": "Patient denies bowel or bladder changes, fever, weight loss, history of cancer. No documented signs of infection (IV drug use not mentioned), major trauma, unexplained weight loss, or rapidly worsening neurological deficit.",
+      "source": null,
+      "status": "NOT_FOUND"
+    },
+    {
+      "evidence": [
+        "VN-1"
+      ],
+      "id": "CONSERVATIVE_6W",
+      "reason": "Medical record shows low back pain for three months. Naproxen started on 2026-07-20 (3 days before MRI order date). No documentation of physical therapy sessions, home exercise program duration exceeding six weeks prior to imaging, or a stated course of conservative care lasting at least six weeks.",
+      "source": "submitted",
+      "status": "NOT_FOUND"
+    },
+    {
+      "evidence": [
+        "VN-3"
+      ],
+      "id": "RADICULOPATHY",
+      "reason": "Patient reports pain radiating down the left leg to the foot, which constitutes radicular symptoms.",
+      "source": "submitted",
+      "status": "MET"
+    }
+  ],
+  "days_left": 176,
+  "deadline": "2027-03-28",
+  "downgrades": 0,
+  "drop_reasons": [],
+  "error": null,
+  "expected_payment": 1100,
+  "expected_value": 220.0,
+  "expired": false,
+  "flags": [],
+  "invalid_citations": [],
+  "llm_calls": 7,
+  "missing": [
+    "RED_FLAG"
+  ],
+  "model": "qwen3.5:4b",
+  "outputs": {
+    "request_txt": "out/requests/A-1008.txt"
+  },
+  "payer": "Northwind Health",
+  "policy_id": "NWH-RAD-114",
+  "quote_violations": 0,
+  "route": "FETCH",
+  "search_trail": [],
+  "shown_ids": [
+    "VN-1",
+    "VN-2",
+    "VN-3",
+    "VN-4",
+    "VN-5",
+    "VN-6",
+    "VN-7",
+    "VN-8",
+    "MED-1",
+    "MED-2",
+    "MED-3",
+    "MED-4",
+    "NUR-1",
+    "NUR-2",
+    "NUR-3"
+  ],
+  "status": "draft",
+  "timings": {
+    "llm_ms": 278457,
+    "seconds": 278.48
+  },
+  "tokens": {
+    "completion": 1206,
+    "prompt": 12927
+  },
+  "urgent": false,
+  "win_score": 0.2
+}

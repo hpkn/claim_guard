@@ -1,0 +1,105 @@
+{
+  "billed_charges": 3099,
+  "carc": 50,
+  "claim_id": "A-1049",
+  "cpt": "72148",
+  "date_of_service": "2026-08-12",
+  "denial_date": "2026-09-06",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Samuel Oyelaran",
+      "date": "2026-08-02",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 31-year-old man with low back pain for about four months.",
+        "Denies bowel or bladder changes, fever, weight loss or any history of cancer.",
+        "Drinks coffee twice a day.",
+        "Sleeps about six hours a night.",
+        "Symptoms persist after more than two months of physical therapy and daily naproxen.",
+        "Body mass index is 27.",
+        "Straight leg raise is positive on the left at 45 degrees.",
+        "Decreased sensation to light touch over the left L5 dermatome.",
+        "Blood pressure 128/82, pulse 74.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-08-02",
+      "doc_id": "NUR",
+      "sentences": [
+        "Drinks coffee twice a day.",
+        "Body mass index is 27."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 1111,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "VN-5"
+        ],
+        "status": "MET"
+      },
+      "NEURO_DEFICIT": {
+        "accept": [
+          "MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-8"
+        ],
+        "status": "MET"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-7"
+        ],
+        "status": "MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-2"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": false,
+    "route": "APPEAL"
+  },
+  "group": "APPEAL_VN",
+  "icd10": [
+    "M54.16"
+  ],
+  "order_date": "2026-08-02",
+  "patient": {
+    "age": 31,
+    "member_id": "BPI-418897",
+    "name": "Rashid Boateng",
+    "sex": "M"
+  },
+  "payer": "Bluepeak Insurance",
+  "payer_letter": "Bluepeak Insurance has reviewed claim A-1049 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment together with radicular findings or an objective neurological deficit, or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 90 days of this notice.",
+  "policy_id": "BPI-IMG-07",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

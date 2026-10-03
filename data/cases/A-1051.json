@@ -1,0 +1,76 @@
+{
+  "billed_charges": 3184,
+  "carc": 50,
+  "claim_id": "A-1051",
+  "cpt": "72148",
+  "date_of_service": "2026-08-30",
+  "denial_date": "2026-09-14",
+  "denial_reason": "The records submitted do not document radicular symptoms or a neurological deficit.",
+  "docs": [
+    {
+      "author": "Dr. Alan Whitcombe",
+      "date": "2026-08-25",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 49-year-old man with low back pain for about ten days.",
+        "Denies bowel or bladder changes, fever, weight loss or any history of cancer.",
+        "Body mass index is 27.",
+        "Symptoms began ten days ago after lifting a heavy box.",
+        "Blood pressure 128/82, pulse 74.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    }
+  ],
+  "expected_payment": 1300,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "VN-4"
+        ],
+        "status": "NOT_MET"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [],
+        "status": "NOT_FOUND"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "VN-2"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": false,
+    "route": "DROP"
+  },
+  "group": "DROP",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-08-25",
+  "patient": {
+    "age": 49,
+    "member_id": "NWH-359961",
+    "name": "Nikolai Lindqvist",
+    "sex": "M"
+  },
+  "payer": "Northwind Health",
+  "payer_letter": "Northwind Health has reviewed claim A-1051 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment or a red flag condition. The records submitted do not document radicular symptoms or a neurological deficit. You may request reconsideration within 180 days of this notice.",
+  "policy_id": "NWH-RAD-114",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

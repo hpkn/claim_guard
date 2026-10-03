@@ -1,0 +1,91 @@
+{
+  "billed_charges": 1164,
+  "carc": 50,
+  "claim_id": "A-1021",
+  "cpt": "72148",
+  "date_of_service": "2026-07-30",
+  "denial_date": "2026-08-16",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Beatriz Campos",
+      "date": "2026-07-21",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 66-year-old woman with low back pain for about four months.",
+        "Works as a school bus driver.",
+        "No fever, weight loss, saddle numbness or cancer history.",
+        "Lives with her spouse.",
+        "Lumbar X-rays on 2026-06-25 showed mild degenerative change.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-07-21",
+      "doc_id": "MED",
+      "sentences": [
+        "Lives with her spouse.",
+        "Works as a school bus driver.",
+        "Naproxen 500 mg twice daily since 2026-05-19."
+      ],
+      "title": "Medication list",
+      "type": "medication_list"
+    }
+  ],
+  "expected_payment": 455,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "MED-3"
+        ],
+        "status": "MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-3"
+        ],
+        "status": "NOT_MET"
+      },
+      "XRAY_DONE": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "VN-5"
+        ],
+        "status": "MET"
+      }
+    },
+    "injection": false,
+    "needs_search": true,
+    "route": "APPEAL"
+  },
+  "group": "APPEAL_SEARCH",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-07-21",
+  "patient": {
+    "age": 66,
+    "member_id": "HMA-102805",
+    "name": "Rosa Lindqvist",
+    "sex": "F"
+  },
+  "payer": "Harborline Medicare Advantage",
+  "payer_letter": "Harborline Medicare Advantage has reviewed claim A-1021 for MRI of the lumbar spine. Coverage requires documentation of a prior lumbar spine X-ray together with at least six weeks of conservative treatment, or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 60 days of this notice.",
+  "policy_id": "HMA-MRI-22",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "draft",
+  "submitted_doc_id": "VN"
+}

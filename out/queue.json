@@ -1,0 +1,67 @@
+[
+  {
+    "claim_id": "A-1021",
+    "days_left": 12,
+    "expected_payment": 455,
+    "expected_value": 245.7,
+    "flags": [],
+    "payer": "Harborline Medicare Advantage",
+    "rank": 1,
+    "route": "APPEAL",
+    "status": "draft",
+    "urgent": true,
+    "win_score": 0.54
+  },
+  {
+    "claim_id": "A-1005",
+    "days_left": 154,
+    "expected_payment": 1075,
+    "expected_value": 580.5,
+    "flags": [],
+    "payer": "Northwind Health",
+    "rank": 2,
+    "route": "APPEAL",
+    "status": "draft",
+    "urgent": false,
+    "win_score": 0.54
+  },
+  {
+    "claim_id": "A-1001",
+    "days_left": 149,
+    "expected_payment": 980,
+    "expected_value": 0.0,
+    "flags": [],
+    "payer": "Northwind Health",
+    "rank": 3,
+    "route": "MANUAL",
+    "status": "draft",
+    "urgent": false,
+    "win_score": 0.0
+  },
+  {
+    "claim_id": "A-1002",
+    "days_left": 38,
+    "expected_payment": 464,
+    "expected_value": 0.0,
+    "flags": [],
+    "payer": "Harborline Medicare Advantage",
+    "rank": 4,
+    "route": "MANUAL",
+    "status": "draft",
+    "urgent": false,
+    "win_score": 0.0
+  },
+  {
+    "claim_id": "A-1003",
+    "days_left": 146,
+    "expected_payment": 861,
+    "expected_value": 0.0,
+    "flags": [],
+    "payer": "Northwind Health",
+    "rank": 5,
+    "route": "MANUAL",
+    "status": "draft",
+    "urgent": false,
+    "win_score": 0.0
+  }
+]

@@ -1,0 +1,107 @@
+{
+  "billed_charges": 1783,
+  "carc": 50,
+  "claim_id": "A-1031",
+  "cpt": "72148",
+  "date_of_service": "2026-08-01",
+  "denial_date": "2026-09-04",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Priya Raman",
+      "date": "2026-07-24",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 53-year-old woman with low back pain for about two months.",
+        "Denies bowel or bladder changes, fever, weight loss or any history of cancer.",
+        "Blood pressure 128/82, pulse 74.",
+        "Sleeps about six hours a night.",
+        "Lives with her spouse.",
+        "Works as a accountant.",
+        "Referred to physical therapy at the last visit.",
+        "Decreased sensation to light touch over the left L5 dermatome.",
+        "Pain stays in the low back and does not spread into the legs.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-07-24",
+      "doc_id": "NUR",
+      "sentences": [
+        "Lives with her spouse.",
+        "Works as a accountant.",
+        "Sleeps about six hours a night.",
+        "Blood pressure 128/82, pulse 74."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 731,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-7"
+        ],
+        "status": "NOT_FOUND"
+      },
+      "NEURO_DEFICIT": {
+        "accept": [
+          "MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-8"
+        ],
+        "status": "MET"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-9"
+        ],
+        "status": "NOT_MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-2"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": false,
+    "route": "FETCH"
+  },
+  "group": "FETCH",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-07-24",
+  "patient": {
+    "age": 53,
+    "member_id": "BPI-238205",
+    "name": "Ruth Obuya",
+    "sex": "F"
+  },
+  "payer": "Bluepeak Insurance",
+  "payer_letter": "Bluepeak Insurance has reviewed claim A-1031 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment together with radicular findings or an objective neurological deficit, or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 90 days of this notice.",
+  "policy_id": "BPI-IMG-07",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

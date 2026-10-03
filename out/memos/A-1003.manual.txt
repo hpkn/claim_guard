@@ -1,0 +1,11 @@
+Demo General Hospital
+Denial Management Office
+
+2026-10-03
+
+RE: claim A-1003
+
+ClaimGuard could not complete this case.
+Error: invalid JSON
+
+Handle this case by hand.

@@ -1,0 +1,116 @@
+{
+  "billed_charges": 2154,
+  "carc": 50,
+  "claim_id": "A-1027",
+  "cpt": "72148",
+  "date_of_service": "2026-08-12",
+  "denial_date": "2026-09-10",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Samuel Oyelaran",
+      "date": "2026-08-09",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 51-year-old woman with low back pain for about two months.",
+        "No fever, weight loss, saddle numbness or cancer history.",
+        "Blood pressure 128/82, pulse 74.",
+        "Sleeps about six hours a night.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-07-19",
+      "doc_id": "PT1",
+      "sentences": [
+        "Initial evaluation for low back pain with right leg symptoms.",
+        "Plan of care: physical therapy twice a week for eight weeks with a home exercise program.",
+        "Body mass index is 27.",
+        "Works as a school bus driver.",
+        "Drinks coffee twice a day."
+      ],
+      "title": "Physical therapy initial evaluation",
+      "type": "therapy_note"
+    },
+    {
+      "author": "",
+      "date": "2026-08-08",
+      "doc_id": "PT2",
+      "sentences": [
+        "Patient attended 5 sessions over three weeks before the MRI order.",
+        "Drinks coffee twice a day.",
+        "Works as a school bus driver.",
+        "Blood pressure 128/82, pulse 74.",
+        "Lives with her spouse."
+      ],
+      "title": "Physical therapy discharge summary",
+      "type": "therapy_note"
+    },
+    {
+      "author": "",
+      "date": "2026-08-09",
+      "doc_id": "NUR",
+      "sentences": [
+        "Sleeps about six hours a night.",
+        "Works as a school bus driver.",
+        "Body mass index is 27.",
+        "Lives with her spouse."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 920,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "PT2-1"
+        ],
+        "status": "NOT_MET"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [],
+        "status": "NOT_FOUND"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "VN-2"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": true,
+    "route": "DROP"
+  },
+  "group": "DROP",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-08-09",
+  "patient": {
+    "age": 51,
+    "member_id": "NWH-943718",
+    "name": "Dawn Hollis",
+    "sex": "F"
+  },
+  "payer": "Northwind Health",
+  "payer_letter": "Northwind Health has reviewed claim A-1027 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 180 days of this notice.",
+  "policy_id": "NWH-RAD-114",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

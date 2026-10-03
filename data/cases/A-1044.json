@@ -1,0 +1,94 @@
+{
+  "billed_charges": 2949,
+  "carc": 50,
+  "claim_id": "A-1044",
+  "cpt": "72148",
+  "date_of_service": "2026-07-14",
+  "denial_date": "2026-08-04",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Samuel Oyelaran",
+      "date": "2026-07-05",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 45-year-old man with low back pain for about four months.",
+        "Blood pressure 128/82, pulse 74.",
+        "Denies bowel or bladder changes, fever, weight loss or any history of cancer.",
+        "Referred to physical therapy at the last visit.",
+        "Lives with his spouse.",
+        "Reports numbness and tingling along the outer right calf.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-07-05",
+      "doc_id": "NUR",
+      "sentences": [
+        "Lives with his spouse.",
+        "Drinks coffee twice a day.",
+        "Blood pressure 128/82, pulse 74.",
+        "Works as a warehouse supervisor."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 1318,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-4"
+        ],
+        "status": "NOT_FOUND"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-6"
+        ],
+        "status": "MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-3"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": false,
+    "route": "FETCH"
+  },
+  "group": "FETCH",
+  "icd10": [
+    "M51.16"
+  ],
+  "order_date": "2026-07-05",
+  "patient": {
+    "age": 45,
+    "member_id": "NWH-365971",
+    "name": "Tobias Whitfield",
+    "sex": "M"
+  },
+  "payer": "Northwind Health",
+  "payer_letter": "Northwind Health has reviewed claim A-1044 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 180 days of this notice.",
+  "policy_id": "NWH-RAD-114",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

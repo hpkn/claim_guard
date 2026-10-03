@@ -1,0 +1,110 @@
+{
+  "billed_charges": 854,
+  "carc": 50,
+  "claim_id": "A-1017",
+  "cpt": "72148",
+  "date_of_service": "2026-08-04",
+  "denial_date": "2026-09-07",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Samuel Oyelaran",
+      "date": "2026-07-29",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 55-year-old man with low back pain for about four months.",
+        "Denies bowel or bladder changes, fever, weight loss or any history of cancer.",
+        "Lumbar X-rays on 2026-06-25 showed mild degenerative change.",
+        "Body mass index is 27.",
+        "Works as a warehouse supervisor.",
+        "Sleeps about six hours a night.",
+        "Lives with his spouse.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-05-20",
+      "doc_id": "PT1",
+      "sentences": [
+        "Sleeps about six hours a night.",
+        "Initial evaluation for low back pain with right leg symptoms.",
+        "Lives with his spouse.",
+        "Body mass index is 27.",
+        "Plan of care: physical therapy twice a week for eight weeks with a home exercise program."
+      ],
+      "title": "Physical therapy initial evaluation",
+      "type": "therapy_note"
+    },
+    {
+      "author": "",
+      "date": "2026-07-28",
+      "doc_id": "PT2",
+      "sentences": [
+        "Patient attended 12 sessions between 2026-05-20 and 2026-07-28.",
+        "Low back pain persists despite therapy.",
+        "Lives with his spouse.",
+        "Body mass index is 27.",
+        "Works as a warehouse supervisor."
+      ],
+      "title": "Physical therapy discharge summary",
+      "type": "therapy_note"
+    }
+  ],
+  "expected_payment": 326,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "PT2-1",
+          "PT2-2"
+        ],
+        "status": "MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-2"
+        ],
+        "status": "NOT_MET"
+      },
+      "XRAY_DONE": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "VN-3"
+        ],
+        "status": "MET"
+      }
+    },
+    "injection": false,
+    "needs_search": true,
+    "route": "APPEAL"
+  },
+  "group": "APPEAL_SEARCH",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-07-29",
+  "patient": {
+    "age": 55,
+    "member_id": "HMA-130094",
+    "name": "Ivan Lindqvist",
+    "sex": "M"
+  },
+  "payer": "Harborline Medicare Advantage",
+  "payer_letter": "Harborline Medicare Advantage has reviewed claim A-1017 for MRI of the lumbar spine. Coverage requires documentation of a prior lumbar spine X-ray together with at least six weeks of conservative treatment, or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 60 days of this notice.",
+  "policy_id": "HMA-MRI-22",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

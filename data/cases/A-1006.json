@@ -1,0 +1,100 @@
+{
+  "billed_charges": 2199,
+  "carc": 50,
+  "claim_id": "A-1006",
+  "cpt": "72148",
+  "date_of_service": "2026-08-09",
+  "denial_date": "2026-08-28",
+  "denial_reason": "The records submitted do not document an objective neurological deficit.",
+  "docs": [
+    {
+      "author": "Dr. Alan Whitcombe",
+      "date": "2026-08-02",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 42-year-old woman with low back pain for about three months.",
+        "Blood pressure 128/82, pulse 74.",
+        "Denies bowel or bladder changes, fever, weight loss or any history of cancer.",
+        "Body mass index is 27.",
+        "Symptoms persist after more than two months of physical therapy and daily naproxen.",
+        "Works as a accountant.",
+        "Reports numbness and tingling along the outer left calf.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-08-02",
+      "doc_id": "NUR",
+      "sentences": [
+        "Body mass index is 27.",
+        "Drinks coffee twice a day.",
+        "Sleeps about six hours a night."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 936,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "VN-5"
+        ],
+        "status": "MET"
+      },
+      "NEURO_DEFICIT": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [],
+        "status": "NOT_FOUND"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "VN-7"
+        ],
+        "status": "MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-3"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": false,
+    "route": "APPEAL"
+  },
+  "group": "APPEAL_VN",
+  "icd10": [
+    "M54.16"
+  ],
+  "order_date": "2026-08-02",
+  "patient": {
+    "age": 42,
+    "member_id": "BPI-161324",
+    "name": "Yolanda Barros",
+    "sex": "F"
+  },
+  "payer": "Bluepeak Insurance",
+  "payer_letter": "Bluepeak Insurance has reviewed claim A-1006 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment together with radicular findings or an objective neurological deficit, or a red flag condition. The records submitted do not document an objective neurological deficit. You may request reconsideration within 90 days of this notice.",
+  "policy_id": "BPI-IMG-07",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "draft",
+  "submitted_doc_id": "VN"
+}

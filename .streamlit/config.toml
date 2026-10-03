@@ -1,0 +1,17 @@
+[browser]
+gatherUsageStats = false
+
+[server]
+address = "127.0.0.1"
+port = 8080
+
+[theme]
+base = "light"
+primaryColor = "#12284C"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F3F4F6"
+textColor = "#111827"
+font = "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+
+[client]
+toolbarMode = "minimal"

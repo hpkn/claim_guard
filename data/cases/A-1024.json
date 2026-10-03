@@ -1,0 +1,118 @@
+{
+  "billed_charges": 2034,
+  "carc": 50,
+  "claim_id": "A-1024",
+  "cpt": "72148",
+  "date_of_service": "2026-09-08",
+  "denial_date": "2026-09-22",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Priya Raman",
+      "date": "2026-08-29",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 79-year-old woman with low back pain for about four months.",
+        "Sleeps about six hours a night.",
+        "Blood pressure 128/82, pulse 74.",
+        "No fever, weight loss, saddle numbness or cancer history.",
+        "Reports numbness and tingling along the outer right calf.",
+        "The right Achilles reflex is absent.",
+        "Works as a accountant.",
+        "Drinks coffee twice a day.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-08-08",
+      "doc_id": "PT1",
+      "sentences": [
+        "Initial evaluation for low back pain with right leg symptoms.",
+        "Blood pressure 128/82, pulse 74.",
+        "Plan of care: physical therapy twice a week for eight weeks with a home exercise program.",
+        "Body mass index is 27."
+      ],
+      "title": "Physical therapy initial evaluation",
+      "type": "therapy_note"
+    },
+    {
+      "author": "",
+      "date": "2026-08-25",
+      "doc_id": "PT2",
+      "sentences": [
+        "Patient attended 5 sessions over three weeks before the MRI order.",
+        "Sleeps about six hours a night.",
+        "Lives with her spouse.",
+        "Drinks coffee twice a day."
+      ],
+      "title": "Physical therapy discharge summary",
+      "type": "therapy_note"
+    }
+  ],
+  "expected_payment": 911,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "PT2-1"
+        ],
+        "status": "NOT_MET"
+      },
+      "NEURO_DEFICIT": {
+        "accept": [
+          "MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-6"
+        ],
+        "status": "MET"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-5"
+        ],
+        "status": "MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "VN-4"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": true,
+    "route": "DROP"
+  },
+  "group": "DROP",
+  "icd10": [
+    "M54.16"
+  ],
+  "order_date": "2026-08-29",
+  "patient": {
+    "age": 79,
+    "member_id": "BPI-578975",
+    "name": "Dawn Kaminski",
+    "sex": "F"
+  },
+  "payer": "Bluepeak Insurance",
+  "payer_letter": "Bluepeak Insurance has reviewed claim A-1024 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment together with radicular findings or an objective neurological deficit, or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 90 days of this notice.",
+  "policy_id": "BPI-IMG-07",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

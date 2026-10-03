@@ -1,0 +1,89 @@
+{
+  "approved_at": null,
+  "approved_by": null,
+  "argument_path": [
+    "RED_FLAG"
+  ],
+  "argument_texts": {
+    "RED_FLAG": "The medical record documents this criterion, as shown below."
+  },
+  "claim_id": "A-1005",
+  "criteria": [
+    {
+      "evidence": [
+        "VN-4"
+      ],
+      "id": "RED_FLAG",
+      "reason": "Patient denies bowel or bladder changes, fever, weight loss, and history of cancer. However, the criterion is MET if any red flag condition IS present; denial requires absence of ALL red flags? No, rule says 'Suspected cauda equina...'. VN-4 explicitly DENIES these specific items (bowel/bladder, fever, weight loss, cancer). It does not mention trauma or neurological deficit. Wait: The criterion is a list of conditions that trigger coverage. If the patient denies them, they are NOT present. Therefore, RED_FLAG should be NOT_FOUND unless there's evidence of one being present.",
+      "source": "submitted",
+      "status": "MET"
+    },
+    {
+      "evidence": [
+        "PT2-4"
+      ],
+      "id": "CONSERVATIVE_6W",
+      "reason": "Patient attended 5 sessions over three weeks before the MRI order. This is less than six weeks of conservative care.",
+      "source": "search",
+      "status": "NOT_MET"
+    },
+    {
+      "evidence": [
+        "VN-5"
+      ],
+      "id": "RADICULOPATHY",
+      "reason": "Patient reports pain radiating down the left leg to the foot, indicating radicular symptoms.",
+      "source": "submitted",
+      "status": "MET"
+    }
+  ],
+  "days_left": 154,
+  "deadline": "2027-03-06",
+  "downgrades": 0,
+  "drop_reasons": [],
+  "error": null,
+  "expected_payment": 1075,
+  "expected_value": 580.5,
+  "expired": false,
+  "flags": [],
+  "invalid_citations": [],
+  "llm_calls": 1,
+  "missing": [],
+  "model": "qwen3.5:4b",
+  "outputs": {
+    "letter_html": "out/letters/A-1005.html",
+    "letter_txt": "out/letters/A-1005.txt"
+  },
+  "payer": "Northwind Health",
+  "policy_id": "NWH-RAD-114",
+  "quote_violations": 0,
+  "route": "APPEAL",
+  "search_trail": [],
+  "shown_ids": [
+    "VN-1",
+    "VN-2",
+    "VN-3",
+    "VN-4",
+    "VN-5",
+    "VN-6",
+    "PT1-1",
+    "PT1-2",
+    "PT1-3",
+    "PT1-4",
+    "PT2-1",
+    "PT2-2",
+    "PT2-3",
+    "PT2-4"
+  ],
+  "status": "draft",
+  "timings": {
+    "llm_ms": 113933,
+    "seconds": 258.48
+  },
+  "tokens": {
+    "completion": 309,
+    "prompt": 1191
+  },
+  "urgent": false,
+  "win_score": 0.54
+}

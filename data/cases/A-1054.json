@@ -1,0 +1,106 @@
+{
+  "billed_charges": 2392,
+  "carc": 50,
+  "claim_id": "A-1054",
+  "cpt": "72148",
+  "date_of_service": "2026-08-09",
+  "denial_date": "2026-09-08",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Helen Marsh",
+      "date": "2026-08-04",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 63-year-old man with low back pain for about two months.",
+        "No fever, weight loss, saddle numbness or cancer history.",
+        "Symptoms persist after more than two months of physical therapy and daily naproxen.",
+        "Blood pressure 128/82, pulse 74.",
+        "Decreased sensation to light touch over the right L5 dermatome.",
+        "Reports numbness and tingling along the outer right calf.",
+        "Sleeps about six hours a night.",
+        "Body mass index is 27.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-08-04",
+      "doc_id": "NUR",
+      "sentences": [
+        "Blood pressure 128/82, pulse 74.",
+        "Lives with his spouse.",
+        "Body mass index is 27.",
+        "Works as a school bus driver."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 867,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "VN-3"
+        ],
+        "status": "MET"
+      },
+      "NEURO_DEFICIT": {
+        "accept": [
+          "MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-5"
+        ],
+        "status": "MET"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-6"
+        ],
+        "status": "MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-2"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": false,
+    "route": "APPEAL"
+  },
+  "group": "APPEAL_VN",
+  "icd10": [
+    "M54.16"
+  ],
+  "order_date": "2026-08-04",
+  "patient": {
+    "age": 63,
+    "member_id": "BPI-649697",
+    "name": "Nikolai Barros",
+    "sex": "M"
+  },
+  "payer": "Bluepeak Insurance",
+  "payer_letter": "Bluepeak Insurance has reviewed claim A-1054 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment together with radicular findings or an objective neurological deficit, or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 90 days of this notice.",
+  "policy_id": "BPI-IMG-07",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

@@ -1,0 +1,23 @@
+Demo General Hospital
+Denial Management Office
+
+2026-10-03
+
+Northwind Health Appeals Unit, PO Box 1140, Springfield
+
+RE: request for reconsideration of claim A-1005
+
+Patient: Harriet Alvarez
+Member ID: NWH-360735
+Date of service: 2026-08-07
+Procedure: CPT 72148, MRI lumbar spine without contrast
+ICD-10: M54.16
+
+We request reconsideration of the denial of this claim. The denial states: The records submitted do not document at least six weeks of conservative treatment before imaging. The medical record shows that the MRI met Northwind Health policy NWH-RAD-114, Advanced imaging of the lumbar spine, as set out below.
+
+Red flag present
+The medical record documents this criterion, as shown below. "Denies bowel or bladder changes, fever, weight loss or any history of cancer." (Orthopedic clinic visit note, 2026-08-01, VN-4)
+
+Because the documented findings meet the policy, we ask that the denial be reversed and the claim paid. The referenced records are enclosed.
+
+Prepared by ClaimGuard for specialist review. Status: draft.

@@ -1,0 +1,26 @@
+Demo General Hospital
+Denial Management Office
+
+2026-10-03
+
+Harborline MA Reconsiderations, PO Box 2200, Bayport
+
+RE: request for reconsideration of claim A-1004
+
+Patient: Harriet Vasquez
+Member ID: HMA-359947
+Date of service: 2026-07-22
+Procedure: CPT 72148, MRI lumbar spine without contrast
+ICD-10: M54.50
+
+We request reconsideration of the denial of this claim. The denial states: The records submitted do not document a prior lumbar spine X-ray. The medical record shows that the MRI met Harborline Medicare Advantage policy HMA-MRI-22, Lumbar spine MRI, as set out below.
+
+Prior lumbar X-ray
+The medical record documents this criterion, as shown below. "Two views of the lumbar spine were obtained." (Lumbar X-ray report, 2026-07-06, XR-2)
+
+Six weeks of conservative care
+The medical record documents this criterion, as shown below. "Symptoms persist after more than two months of physical therapy and daily naproxen." (Orthopedic clinic visit note, 2026-07-18, VN-6)
+
+Because the documented findings meet the policy, we ask that the denial be reversed and the claim paid. The referenced records are enclosed.
+
+Prepared by ClaimGuard for specialist review. Status: draft.

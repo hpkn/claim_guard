@@ -1,0 +1,90 @@
+{
+  "billed_charges": 844,
+  "carc": 50,
+  "claim_id": "A-1034",
+  "cpt": "72148",
+  "date_of_service": "2026-08-11",
+  "denial_date": "2026-08-28",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Helen Marsh",
+      "date": "2026-08-03",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 35-year-old woman with low back pain for about ten days.",
+        "Lives with her spouse.",
+        "Drinks coffee twice a day.",
+        "Symptoms began ten days ago after lifting a heavy box.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "Dr. Priya Raman",
+      "date": "2026-04-10",
+      "doc_id": "EV1",
+      "sentences": [
+        "Works as a chef.",
+        "Reports unexplained weight loss of about 15 pounds over three months.",
+        "Blood pressure 128/82, pulse 74.",
+        "Body mass index is 27.",
+        "Drinks coffee twice a day."
+      ],
+      "title": "Earlier clinic visit note",
+      "type": "visit_note"
+    }
+  ],
+  "expected_payment": 333,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-4"
+        ],
+        "status": "NOT_MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "EV1-2"
+        ],
+        "status": "MET"
+      },
+      "XRAY_DONE": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [],
+        "status": "NOT_FOUND"
+      }
+    },
+    "injection": false,
+    "needs_search": true,
+    "route": "APPEAL"
+  },
+  "group": "APPEAL_RED",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-08-03",
+  "patient": {
+    "age": 35,
+    "member_id": "HMA-337144",
+    "name": "Elena Lindqvist",
+    "sex": "F"
+  },
+  "payer": "Harborline Medicare Advantage",
+  "payer_letter": "Harborline Medicare Advantage has reviewed claim A-1034 for MRI of the lumbar spine. Coverage requires documentation of a prior lumbar spine X-ray together with at least six weeks of conservative treatment, or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 60 days of this notice.",
+  "policy_id": "HMA-MRI-22",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

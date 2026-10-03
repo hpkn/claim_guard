@@ -1,0 +1,60 @@
+[
+  {
+    "appeal_window_days": 180,
+    "appeals_address": "Northwind Health Appeals Unit, PO Box 1140, Springfield",
+    "cpt": "72148",
+    "paths": [
+      [
+        "RED_FLAG"
+      ],
+      [
+        "CONSERVATIVE_6W",
+        "RADICULOPATHY"
+      ]
+    ],
+    "payer": "Northwind Health",
+    "plan_type": "commercial",
+    "policy_id": "NWH-RAD-114",
+    "title": "Advanced imaging of the lumbar spine"
+  },
+  {
+    "appeal_window_days": 90,
+    "appeals_address": "Bluepeak Insurance Clinical Appeals, PO Box 707, Riverton",
+    "cpt": "72148",
+    "paths": [
+      [
+        "RED_FLAG"
+      ],
+      [
+        "CONSERVATIVE_6W",
+        "RADICULOPATHY"
+      ],
+      [
+        "CONSERVATIVE_6W",
+        "NEURO_DEFICIT"
+      ]
+    ],
+    "payer": "Bluepeak Insurance",
+    "plan_type": "commercial",
+    "policy_id": "BPI-IMG-07",
+    "title": "MRI of the lumbar spine"
+  },
+  {
+    "appeal_window_days": 60,
+    "appeals_address": "Harborline MA Reconsiderations, PO Box 2200, Bayport",
+    "cpt": "72148",
+    "paths": [
+      [
+        "RED_FLAG"
+      ],
+      [
+        "XRAY_DONE",
+        "CONSERVATIVE_6W"
+      ]
+    ],
+    "payer": "Harborline Medicare Advantage",
+    "plan_type": "medicare_advantage",
+    "policy_id": "HMA-MRI-22",
+    "title": "Lumbar spine MRI"
+  }
+]

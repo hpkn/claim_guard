@@ -1,0 +1,86 @@
+[
+  {
+    "definition": "Suspected cauda equina (saddle numbness, new bladder or bowel problems), history of cancer, signs of infection (fever with back pain, IV drug use, weakened immune system), major trauma or suspected fracture, unexplained weight loss, or a rapidly worsening neurological deficit.",
+    "id": "RED_FLAG",
+    "keywords": [
+      "cancer",
+      "malignancy",
+      "fever",
+      "bladder",
+      "bowel",
+      "saddle",
+      "trauma",
+      "fracture",
+      "weight loss",
+      "infection"
+    ],
+    "label": "Red flag present",
+    "met_example": "Past medical history includes breast cancer treated with surgery in 2021.",
+    "not_met_example": "Denies bowel or bladder changes, fever, weight loss or any history of cancer."
+  },
+  {
+    "definition": "At least six weeks of conservative treatment (physical therapy, anti-inflammatory or other pain medicine, home exercise) before the MRI order date, with symptoms persisting. Less than six weeks is not met.",
+    "id": "CONSERVATIVE_6W",
+    "keywords": [
+      "physical therapy",
+      "PT",
+      "sessions",
+      "weeks",
+      "naproxen",
+      "ibuprofen",
+      "meloxicam",
+      "gabapentin",
+      "home exercise",
+      "medication"
+    ],
+    "label": "Six weeks of conservative care",
+    "met_example": "Patient attended 14 sessions between 2026-06-09 and 2026-08-04.",
+    "not_met_example": "She started physical therapy three weeks ago."
+  },
+  {
+    "definition": "Pain radiating below the knee, a positive straight leg raise, or numbness or tingling in a nerve root pattern.",
+    "id": "RADICULOPATHY",
+    "keywords": [
+      "radiating",
+      "leg",
+      "sciatica",
+      "straight leg raise",
+      "numbness",
+      "tingling",
+      "dermatomal"
+    ],
+    "label": "Radicular symptoms or signs",
+    "met_example": "Pain radiates down the left leg to the foot.",
+    "not_met_example": "Pain stays in the low back and does not spread into the legs."
+  },
+  {
+    "definition": "Measurable weakness, reflex loss or sensory loss on examination.",
+    "id": "NEURO_DEFICIT",
+    "keywords": [
+      "strength",
+      "weakness",
+      "reflex",
+      "Achilles",
+      "patellar",
+      "sensation",
+      "4/5"
+    ],
+    "label": "Objective neurological deficit",
+    "met_example": "Left ankle plantarflexion strength is 4/5.",
+    "not_met_example": "Strength is 5/5 in both legs and reflexes are symmetric."
+  },
+  {
+    "definition": "Plain X-rays of the lumbar spine taken before the MRI order.",
+    "id": "XRAY_DONE",
+    "keywords": [
+      "X-ray",
+      "xray",
+      "radiograph",
+      "radiographs",
+      "imaging"
+    ],
+    "label": "Prior lumbar X-ray",
+    "met_example": "Two views of the lumbar spine were obtained.",
+    "not_met_example": "No imaging of the spine has been done to date."
+  }
+]

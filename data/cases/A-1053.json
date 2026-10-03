@@ -1,0 +1,101 @@
+{
+  "billed_charges": 1846,
+  "carc": 50,
+  "claim_id": "A-1053",
+  "cpt": "72148",
+  "date_of_service": "2026-08-09",
+  "denial_date": "2026-08-24",
+  "denial_reason": "The records submitted do not document radicular symptoms or a neurological deficit.",
+  "docs": [
+    {
+      "author": "Dr. Beatriz Campos",
+      "date": "2026-07-31",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 76-year-old man with low back pain for about three months.",
+        "Denies bowel or bladder changes, fever, weight loss or any history of cancer.",
+        "Lives with his spouse.",
+        "Sleeps about six hours a night.",
+        "Symptoms persist after more than two months of physical therapy and daily naproxen.",
+        "Drinks coffee twice a day.",
+        "The left Achilles reflex is absent.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-07-31",
+      "doc_id": "NUR",
+      "sentences": [
+        "Drinks coffee twice a day.",
+        "Body mass index is 27.",
+        "Lives with his spouse.",
+        "Blood pressure 128/82, pulse 74."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 726,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "VN-5"
+        ],
+        "status": "MET"
+      },
+      "NEURO_DEFICIT": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "VN-7"
+        ],
+        "status": "MET"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [],
+        "status": "NOT_FOUND"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-2"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": false,
+    "route": "APPEAL"
+  },
+  "group": "APPEAL_VN",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-07-31",
+  "patient": {
+    "age": 76,
+    "member_id": "BPI-943019",
+    "name": "Rashid Thorne",
+    "sex": "M"
+  },
+  "payer": "Bluepeak Insurance",
+  "payer_letter": "Bluepeak Insurance has reviewed claim A-1053 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment together with radicular findings or an objective neurological deficit, or a red flag condition. The records submitted do not document radicular symptoms or a neurological deficit. You may request reconsideration within 90 days of this notice.",
+  "policy_id": "BPI-IMG-07",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

@@ -1,0 +1,116 @@
+{
+  "billed_charges": 881,
+  "carc": 50,
+  "claim_id": "A-1010",
+  "cpt": "72148",
+  "date_of_service": "2026-08-02",
+  "denial_date": "2026-08-26",
+  "denial_reason": "The records submitted do not document a prior lumbar spine X-ray.",
+  "docs": [
+    {
+      "author": "Dr. Alan Whitcombe",
+      "date": "2026-07-26",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 44-year-old woman with low back pain for about three months.",
+        "Lives with her spouse.",
+        "Body mass index is 27.",
+        "Sleeps about six hours a night.",
+        "No fever, weight loss, saddle numbness or cancer history.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-07-05",
+      "doc_id": "PT1",
+      "sentences": [
+        "Initial evaluation for low back pain with right leg symptoms.",
+        "Body mass index is 27.",
+        "Lives with her spouse.",
+        "Plan of care: physical therapy twice a week for eight weeks with a home exercise program.",
+        "Blood pressure 128/82, pulse 74."
+      ],
+      "title": "Physical therapy initial evaluation",
+      "type": "therapy_note"
+    },
+    {
+      "author": "",
+      "date": "2026-07-23",
+      "doc_id": "PT2",
+      "sentences": [
+        "Blood pressure 128/82, pulse 74.",
+        "Patient attended 5 sessions over three weeks before the MRI order.",
+        "Drinks coffee twice a day.",
+        "Sleeps about six hours a night."
+      ],
+      "title": "Physical therapy discharge summary",
+      "type": "therapy_note"
+    },
+    {
+      "author": "",
+      "date": "2026-07-26",
+      "doc_id": "NUR",
+      "sentences": [
+        "Lives with her spouse.",
+        "Body mass index is 27.",
+        "Sleeps about six hours a night.",
+        "Works as a warehouse supervisor."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 317,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "PT2-2"
+        ],
+        "status": "NOT_MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "VN-5"
+        ],
+        "status": "NOT_MET"
+      },
+      "XRAY_DONE": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [],
+        "status": "NOT_FOUND"
+      }
+    },
+    "injection": false,
+    "needs_search": true,
+    "route": "DROP"
+  },
+  "group": "DROP",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-07-26",
+  "patient": {
+    "age": 44,
+    "member_id": "HMA-797229",
+    "name": "Maria Delacroix",
+    "sex": "F"
+  },
+  "payer": "Harborline Medicare Advantage",
+  "payer_letter": "Harborline Medicare Advantage has reviewed claim A-1010 for MRI of the lumbar spine. Coverage requires documentation of a prior lumbar spine X-ray together with at least six weeks of conservative treatment, or a red flag condition. The records submitted do not document a prior lumbar spine X-ray. You may request reconsideration within 60 days of this notice.",
+  "policy_id": "HMA-MRI-22",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

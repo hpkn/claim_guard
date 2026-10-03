@@ -1,0 +1,78 @@
+{
+  "approved_at": null,
+  "approved_by": null,
+  "argument_path": [],
+  "argument_texts": null,
+  "claim_id": "A-1001",
+  "criteria": [
+    {
+      "evidence": [],
+      "id": "RED_FLAG",
+      "reason": "not addressed by the reviewer",
+      "source": null,
+      "status": "NOT_FOUND"
+    },
+    {
+      "evidence": [],
+      "id": "CONSERVATIVE_6W",
+      "reason": "not addressed by the reviewer",
+      "source": null,
+      "status": "NOT_FOUND"
+    },
+    {
+      "evidence": [],
+      "id": "RADICULOPATHY",
+      "reason": "not addressed by the reviewer",
+      "source": null,
+      "status": "NOT_FOUND"
+    }
+  ],
+  "days_left": 149,
+  "deadline": "2027-03-01",
+  "downgrades": 0,
+  "drop_reasons": [],
+  "error": "model call failed: timeout('timed out')",
+  "expected_payment": 980,
+  "expected_value": 0.0,
+  "expired": false,
+  "flags": [],
+  "invalid_citations": [],
+  "llm_calls": 0,
+  "missing": [],
+  "model": "qwen3.5:4b",
+  "outputs": {
+    "manual_txt": "out/memos/A-1001.manual.txt"
+  },
+  "payer": "Northwind Health",
+  "policy_id": "NWH-RAD-114",
+  "quote_violations": 0,
+  "route": "MANUAL",
+  "search_trail": [],
+  "shown_ids": [
+    "VN-1",
+    "VN-2",
+    "VN-3",
+    "VN-4",
+    "VN-5",
+    "VN-6",
+    "VN-7",
+    "PT1-1",
+    "PT1-2",
+    "PT2-1",
+    "PT2-2",
+    "PT2-3",
+    "MED-1",
+    "MED-2"
+  ],
+  "status": "draft",
+  "timings": {
+    "llm_ms": 0,
+    "seconds": 180.02
+  },
+  "tokens": {
+    "completion": 0,
+    "prompt": 0
+  },
+  "urgent": false,
+  "win_score": 0.0
+}

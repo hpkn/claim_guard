@@ -1,0 +1,83 @@
+{
+  "billed_charges": 2705,
+  "carc": 50,
+  "claim_id": "A-1038",
+  "cpt": "72148",
+  "date_of_service": "2026-07-10",
+  "denial_date": "2026-08-06",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Noor Haddad",
+      "date": "2026-07-06",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 69-year-old woman with low back pain for about four months.",
+        "Sleeps about six hours a night.",
+        "Lives with her spouse.",
+        "No fever, weight loss, saddle numbness or cancer history.",
+        "Works as a school bus driver.",
+        "Drinks coffee twice a day.",
+        "Referred to physical therapy at the last visit.",
+        "Straight leg raise is positive on the right at 45 degrees.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    }
+  ],
+  "expected_payment": 1099,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-7"
+        ],
+        "status": "NOT_FOUND"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-8"
+        ],
+        "status": "MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-4"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": false,
+    "route": "FETCH"
+  },
+  "group": "FETCH",
+  "icd10": [
+    "M51.16"
+  ],
+  "order_date": "2026-07-06",
+  "patient": {
+    "age": 69,
+    "member_id": "NWH-306854",
+    "name": "Yolanda Obuya",
+    "sex": "F"
+  },
+  "payer": "Northwind Health",
+  "payer_letter": "Northwind Health has reviewed claim A-1038 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 180 days of this notice.",
+  "policy_id": "NWH-RAD-114",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

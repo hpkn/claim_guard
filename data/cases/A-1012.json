@@ -1,0 +1,111 @@
+{
+  "billed_charges": 2285,
+  "carc": 50,
+  "claim_id": "A-1012",
+  "cpt": "72148",
+  "date_of_service": "2026-07-29",
+  "denial_date": "2026-08-31",
+  "denial_reason": "The records submitted do not document radicular symptoms or a neurological deficit.",
+  "docs": [
+    {
+      "author": "Dr. Priya Raman",
+      "date": "2026-07-25",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 31-year-old woman with low back pain for about four months.",
+        "Drinks coffee twice a day.",
+        "No fever, weight loss, saddle numbness or cancer history.",
+        "Symptoms persist after more than two months of physical therapy and daily naproxen.",
+        "Works as a warehouse supervisor.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "Dr. Samuel Oyelaran",
+      "date": "2026-06-07",
+      "doc_id": "EV1",
+      "sentences": [
+        "Left ankle plantarflexion strength is 4/5.",
+        "Drinks coffee twice a day.",
+        "Body mass index is 27."
+      ],
+      "title": "Earlier clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-07-25",
+      "doc_id": "NUR",
+      "sentences": [
+        "Drinks coffee twice a day.",
+        "Lives with her spouse.",
+        "Body mass index is 27.",
+        "Sleeps about six hours a night."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 933,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "VN-4"
+        ],
+        "status": "MET"
+      },
+      "NEURO_DEFICIT": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "EV1-1"
+        ],
+        "status": "MET"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [],
+        "status": "NOT_FOUND"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-3"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": true,
+    "route": "APPEAL"
+  },
+  "group": "APPEAL_SEARCH",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-07-25",
+  "patient": {
+    "age": 31,
+    "member_id": "BPI-571932",
+    "name": "Tasha Mensah",
+    "sex": "F"
+  },
+  "payer": "Bluepeak Insurance",
+  "payer_letter": "Bluepeak Insurance has reviewed claim A-1012 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment together with radicular findings or an objective neurological deficit, or a red flag condition. The records submitted do not document radicular symptoms or a neurological deficit. You may request reconsideration within 90 days of this notice.",
+  "policy_id": "BPI-IMG-07",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

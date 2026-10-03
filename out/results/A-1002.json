@@ -1,0 +1,71 @@
+{
+  "approved_at": null,
+  "approved_by": null,
+  "argument_path": [],
+  "argument_texts": null,
+  "claim_id": "A-1002",
+  "criteria": [
+    {
+      "evidence": [],
+      "id": "RED_FLAG",
+      "reason": "not addressed by the reviewer",
+      "source": null,
+      "status": "NOT_FOUND"
+    },
+    {
+      "evidence": [],
+      "id": "XRAY_DONE",
+      "reason": "not addressed by the reviewer",
+      "source": null,
+      "status": "NOT_FOUND"
+    },
+    {
+      "evidence": [],
+      "id": "CONSERVATIVE_6W",
+      "reason": "not addressed by the reviewer",
+      "source": null,
+      "status": "NOT_FOUND"
+    }
+  ],
+  "days_left": 38,
+  "deadline": "2026-11-10",
+  "downgrades": 0,
+  "drop_reasons": [],
+  "error": "model call failed: timeout('timed out')",
+  "expected_payment": 464,
+  "expected_value": 0.0,
+  "expired": false,
+  "flags": [],
+  "invalid_citations": [],
+  "llm_calls": 0,
+  "missing": [],
+  "model": "qwen3.5:4b",
+  "outputs": {
+    "manual_txt": "out/memos/A-1002.manual.txt"
+  },
+  "payer": "Harborline Medicare Advantage",
+  "policy_id": "HMA-MRI-22",
+  "quote_violations": 0,
+  "route": "MANUAL",
+  "search_trail": [],
+  "shown_ids": [
+    "VN-1",
+    "VN-2",
+    "VN-3",
+    "VN-4",
+    "VN-5",
+    "VN-6",
+    "VN-7"
+  ],
+  "status": "draft",
+  "timings": {
+    "llm_ms": 0,
+    "seconds": 180.02
+  },
+  "tokens": {
+    "completion": 0,
+    "prompt": 0
+  },
+  "urgent": false,
+  "win_score": 0.0
+}

@@ -1,0 +1,87 @@
+{
+  "approved_at": null,
+  "approved_by": null,
+  "argument_path": [
+    "XRAY_DONE",
+    "CONSERVATIVE_6W"
+  ],
+  "argument_texts": {
+    "CONSERVATIVE_6W": "The medical record documents this criterion, as shown below.",
+    "XRAY_DONE": "The medical record documents this criterion, as shown below."
+  },
+  "claim_id": "A-1004",
+  "criteria": [
+    {
+      "evidence": [],
+      "id": "RED_FLAG",
+      "reason": "The medical record explicitly denies specific red flag symptoms (VN-5) but does not provide evidence of positive findings for other potential red flags such as major trauma, suspected fracture, or neurological deficits. No sentence directly documents the presence of a red flag condition.",
+      "source": null,
+      "status": "NOT_FOUND"
+    },
+    {
+      "evidence": [
+        "XR-2"
+      ],
+      "id": "XRAY_DONE",
+      "reason": "Sentence XR-2 states 'Two views of the lumbar spine were obtained,' confirming a prior X-ray was performed before the MRI order date.",
+      "source": "search",
+      "status": "MET"
+    },
+    {
+      "evidence": [
+        "VN-6"
+      ],
+      "id": "CONSERVATIVE_6W",
+      "reason": "Sentence VN-6 states 'Symptoms persist after more than two months of physical therapy and daily naproxen.' Two months exceeds the six-week requirement, satisfying the duration criterion.",
+      "source": "submitted",
+      "status": "MET"
+    }
+  ],
+  "days_left": 1,
+  "deadline": "2026-10-04",
+  "downgrades": 0,
+  "drop_reasons": [],
+  "error": null,
+  "expected_payment": 392,
+  "expected_value": 211.68,
+  "expired": false,
+  "flags": [],
+  "invalid_citations": [],
+  "llm_calls": 7,
+  "missing": [],
+  "model": "qwen3.5:4b",
+  "outputs": {
+    "letter_html": "out/letters/A-1004.html",
+    "letter_txt": "out/letters/A-1004.txt"
+  },
+  "payer": "Harborline Medicare Advantage",
+  "policy_id": "HMA-MRI-22",
+  "quote_violations": 0,
+  "route": "APPEAL",
+  "search_trail": [],
+  "shown_ids": [
+    "VN-1",
+    "VN-2",
+    "VN-3",
+    "VN-4",
+    "VN-5",
+    "VN-6",
+    "VN-7",
+    "XR-1",
+    "XR-2",
+    "XR-3",
+    "XR-4",
+    "XR-5"
+  ],
+  "status": "draft",
+  "timings": {
+    "llm_ms": 421015,
+    "seconds": 487.94
+  },
+  "tokens": {
+    "completion": 1273,
+    "prompt": 12900
+  },
+  "urgent": true,
+  "win_score": 0.54
+}

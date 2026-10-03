@@ -1,0 +1,117 @@
+{
+  "billed_charges": 2450,
+  "carc": 50,
+  "claim_id": "A-1001",
+  "cpt": "72148",
+  "date_of_service": "2026-08-14",
+  "denial_date": "2026-09-02",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Priya Raman",
+      "date": "2026-08-07",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 54-year-old woman with low back pain radiating down the left leg to the foot for about three months.",
+        "Pain is worse with sitting and bending.",
+        "She reports some relief from home exercises, but symptoms persist.",
+        "Straight leg raise is positive on the left at 45 degrees.",
+        "Strength is 5/5 in both legs and reflexes are symmetric.",
+        "She denies bowel or bladder changes, fever, weight loss or any history of cancer.",
+        "Plan: MRI of the lumbar spine without contrast to look for nerve root compression."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-06-09",
+      "doc_id": "PT1",
+      "sentences": [
+        "Initial evaluation for low back pain with left leg symptoms.",
+        "Plan of care: physical therapy twice a week for eight weeks with a home exercise program."
+      ],
+      "title": "Physical therapy initial evaluation",
+      "type": "therapy_note"
+    },
+    {
+      "author": "",
+      "date": "2026-08-04",
+      "doc_id": "PT2",
+      "sentences": [
+        "Patient attended 14 sessions between 2026-06-09 and 2026-08-04.",
+        "Radiating pain into the left leg persists despite therapy.",
+        "Goals not met; recommend physician follow-up."
+      ],
+      "title": "Physical therapy discharge summary",
+      "type": "therapy_note"
+    },
+    {
+      "author": "",
+      "date": "2026-08-07",
+      "doc_id": "MED",
+      "sentences": [
+        "Naproxen 500 mg twice daily since 2026-06-02.",
+        "Gabapentin 300 mg at bedtime since 2026-07-15."
+      ],
+      "title": "Medication list",
+      "type": "medication_list"
+    }
+  ],
+  "expected_payment": 980,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "PT2-1",
+          "PT2-2",
+          "MED-1"
+        ],
+        "status": "MET"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "VN-1",
+          "VN-4"
+        ],
+        "status": "MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-6"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": true,
+    "route": "APPEAL"
+  },
+  "group": "APPEAL_SEARCH",
+  "icd10": [
+    "M54.16"
+  ],
+  "order_date": "2026-08-07",
+  "patient": {
+    "age": 54,
+    "member_id": "NWH-552190",
+    "name": "Maria Alvarez",
+    "sex": "F"
+  },
+  "payer": "Northwind Health",
+  "payer_letter": "Northwind Health has reviewed claim A-1001 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 180 days of this notice.",
+  "policy_id": "NWH-RAD-114",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "draft",
+  "submitted_doc_id": "VN"
+}

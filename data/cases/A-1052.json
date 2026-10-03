@@ -1,0 +1,106 @@
+{
+  "billed_charges": 2297,
+  "carc": 50,
+  "claim_id": "A-1052",
+  "cpt": "72148",
+  "date_of_service": "2026-09-04",
+  "denial_date": "2026-09-30",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Samuel Oyelaran",
+      "date": "2026-08-26",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 36-year-old woman with low back pain for about three months.",
+        "Drinks coffee twice a day.",
+        "Works as a warehouse supervisor.",
+        "Denies bowel or bladder changes, fever, weight loss or any history of cancer.",
+        "Referred to physical therapy at the last visit.",
+        "Sleeps about six hours a night.",
+        "Body mass index is 27.",
+        "Left ankle plantarflexion strength is 4/5.",
+        "Straight leg raise is negative on both sides.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-08-26",
+      "doc_id": "NUR",
+      "sentences": [
+        "Body mass index is 27.",
+        "Sleeps about six hours a night.",
+        "Drinks coffee twice a day."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 827,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-5"
+        ],
+        "status": "NOT_FOUND"
+      },
+      "NEURO_DEFICIT": {
+        "accept": [
+          "MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-8"
+        ],
+        "status": "MET"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-9"
+        ],
+        "status": "NOT_MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-4"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": false,
+    "route": "FETCH"
+  },
+  "group": "FETCH",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-08-26",
+  "patient": {
+    "age": 36,
+    "member_id": "BPI-240440",
+    "name": "Tasha Ferraro",
+    "sex": "F"
+  },
+  "payer": "Bluepeak Insurance",
+  "payer_letter": "Bluepeak Insurance has reviewed claim A-1052 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment together with radicular findings or an objective neurological deficit, or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 90 days of this notice.",
+  "policy_id": "BPI-IMG-07",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

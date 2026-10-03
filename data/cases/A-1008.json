@@ -1,0 +1,106 @@
+{
+  "billed_charges": 2664,
+  "carc": 50,
+  "claim_id": "A-1008",
+  "cpt": "72148",
+  "date_of_service": "2026-09-04",
+  "denial_date": "2026-09-29",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Priya Raman",
+      "date": "2026-08-31",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 62-year-old woman with low back pain for about three months.",
+        "Denies bowel or bladder changes, fever, weight loss or any history of cancer.",
+        "Pain radiates down the left leg to the foot.",
+        "Sleeps about six hours a night.",
+        "Drinks coffee twice a day.",
+        "Works as a chef.",
+        "Lives with her spouse.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-08-31",
+      "doc_id": "MED",
+      "sentences": [
+        "Body mass index is 27.",
+        "Lives with her spouse.",
+        "Naproxen 500 mg twice daily since 2026-07-20.",
+        "Blood pressure 128/82, pulse 74."
+      ],
+      "title": "Medication list",
+      "type": "medication_list"
+    },
+    {
+      "author": "",
+      "date": "2026-08-31",
+      "doc_id": "NUR",
+      "sentences": [
+        "Works as a chef.",
+        "Sleeps about six hours a night.",
+        "Lives with her spouse."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 1100,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "MED-3"
+        ],
+        "status": "MET"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "VN-3"
+        ],
+        "status": "MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-2"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": true,
+    "route": "APPEAL"
+  },
+  "group": "APPEAL_SEARCH",
+  "icd10": [
+    "M54.16"
+  ],
+  "order_date": "2026-08-31",
+  "patient": {
+    "age": 62,
+    "member_id": "NWH-217308",
+    "name": "Nadia Barros",
+    "sex": "F"
+  },
+  "payer": "Northwind Health",
+  "payer_letter": "Northwind Health has reviewed claim A-1008 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 180 days of this notice.",
+  "policy_id": "NWH-RAD-114",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "draft",
+  "submitted_doc_id": "VN"
+}

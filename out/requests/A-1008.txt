@@ -1,0 +1,18 @@
+Demo General Hospital
+Denial Management Office
+
+2026-10-03
+
+To: Dr. Priya Raman, ordering clinician
+
+RE: document request for claim A-1008
+
+This claim for MRI lumbar spine without contrast (CPT 72148), performed on 2026-09-04, was denied as not medically necessary by Northwind Health under policy NWH-RAD-114, Advanced imaging of the lumbar spine.
+
+The chart does not document the following, which the policy requires. Please send it so the appeal can be filed:
+
+- Red flag present: Suspected cauda equina (saddle numbness, new bladder or bowel problems), history of cancer, signs of infection (fever with back pain, IV drug use, weakened immune system), major trauma or suspected fracture, unexplained weight loss, or a rapidly worsening neurological deficit.
+
+Appeal deadline: 2027-03-28 (176 days left).
+
+Prepared by ClaimGuard for specialist review.

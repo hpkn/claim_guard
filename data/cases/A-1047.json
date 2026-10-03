@@ -1,0 +1,89 @@
+{
+  "billed_charges": 1168,
+  "carc": 50,
+  "claim_id": "A-1047",
+  "cpt": "72148",
+  "date_of_service": "2026-07-01",
+  "denial_date": "2026-08-03",
+  "denial_reason": "The records submitted do not document a prior lumbar spine X-ray.",
+  "docs": [
+    {
+      "author": "Dr. Samuel Oyelaran",
+      "date": "2026-06-26",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 53-year-old man with low back pain for about three months.",
+        "Denies bowel or bladder changes, fever, weight loss or any history of cancer.",
+        "Lives with his spouse.",
+        "He started physical therapy three weeks ago.",
+        "Works as a school bus driver.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-06-26",
+      "doc_id": "NUR",
+      "sentences": [
+        "Sleeps about six hours a night.",
+        "Blood pressure 128/82, pulse 74.",
+        "Body mass index is 27.",
+        "Drinks coffee twice a day."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 473,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "VN-4"
+        ],
+        "status": "NOT_MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "VN-2"
+        ],
+        "status": "NOT_MET"
+      },
+      "XRAY_DONE": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [],
+        "status": "NOT_FOUND"
+      }
+    },
+    "injection": false,
+    "needs_search": false,
+    "route": "DROP"
+  },
+  "group": "DROP",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-06-26",
+  "patient": {
+    "age": 53,
+    "member_id": "HMA-827691",
+    "name": "Emmett Sandoval",
+    "sex": "M"
+  },
+  "payer": "Harborline Medicare Advantage",
+  "payer_letter": "Harborline Medicare Advantage has reviewed claim A-1047 for MRI of the lumbar spine. Coverage requires documentation of a prior lumbar spine X-ray together with at least six weeks of conservative treatment, or a red flag condition. The records submitted do not document a prior lumbar spine X-ray. You may request reconsideration within 60 days of this notice.",
+  "policy_id": "HMA-MRI-22",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

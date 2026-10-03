@@ -1,0 +1,77 @@
+{
+  "billed_charges": 830,
+  "carc": 50,
+  "claim_id": "A-1015",
+  "cpt": "72148",
+  "date_of_service": "2026-07-06",
+  "denial_date": "2026-08-07",
+  "denial_reason": "The records submitted do not document a prior lumbar spine X-ray.",
+  "docs": [
+    {
+      "author": "Dr. Samuel Oyelaran",
+      "date": "2026-07-03",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 69-year-old woman with low back pain for about ten days.",
+        "Sleeps about six hours a night.",
+        "Denies bowel or bladder changes, fever, weight loss or any history of cancer.",
+        "Body mass index is 27.",
+        "Symptoms began ten days ago after lifting a heavy box.",
+        "Blood pressure 128/82, pulse 74.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    }
+  ],
+  "expected_payment": 321,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "VN-5"
+        ],
+        "status": "NOT_MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "VN-3"
+        ],
+        "status": "NOT_MET"
+      },
+      "XRAY_DONE": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [],
+        "status": "NOT_FOUND"
+      }
+    },
+    "injection": false,
+    "needs_search": false,
+    "route": "DROP"
+  },
+  "group": "DROP",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-07-03",
+  "patient": {
+    "age": 69,
+    "member_id": "HMA-154615",
+    "name": "Maria Thorne",
+    "sex": "F"
+  },
+  "payer": "Harborline Medicare Advantage",
+  "payer_letter": "Harborline Medicare Advantage has reviewed claim A-1015 for MRI of the lumbar spine. Coverage requires documentation of a prior lumbar spine X-ray together with at least six weeks of conservative treatment, or a red flag condition. The records submitted do not document a prior lumbar spine X-ray. You may request reconsideration within 60 days of this notice.",
+  "policy_id": "HMA-MRI-22",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

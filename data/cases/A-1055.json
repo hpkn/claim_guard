@@ -1,0 +1,107 @@
+{
+  "billed_charges": 749,
+  "carc": 50,
+  "claim_id": "A-1055",
+  "cpt": "72148",
+  "date_of_service": "2026-08-20",
+  "denial_date": "2026-09-06",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Beatriz Campos",
+      "date": "2026-08-14",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 39-year-old man with low back pain for about two months.",
+        "Denies bowel or bladder changes, fever, weight loss or any history of cancer.",
+        "Lumbar X-rays on 2026-07-06 showed mild degenerative change.",
+        "Lives with his spouse.",
+        "Sleeps about six hours a night.",
+        "Body mass index is 27.",
+        "Works as a warehouse supervisor.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-08-14",
+      "doc_id": "MED",
+      "sentences": [
+        "Lives with his spouse.",
+        "Blood pressure 128/82, pulse 74.",
+        "Sleeps about six hours a night.",
+        "Body mass index is 27.",
+        "Naproxen 500 mg twice daily since 2026-06-12."
+      ],
+      "title": "Medication list",
+      "type": "medication_list"
+    },
+    {
+      "author": "",
+      "date": "2026-08-14",
+      "doc_id": "NUR",
+      "sentences": [
+        "Sleeps about six hours a night.",
+        "Body mass index is 27.",
+        "Works as a warehouse supervisor."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 304,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "MED-5"
+        ],
+        "status": "MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-2"
+        ],
+        "status": "NOT_MET"
+      },
+      "XRAY_DONE": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "VN-3"
+        ],
+        "status": "MET"
+      }
+    },
+    "injection": false,
+    "needs_search": true,
+    "route": "APPEAL"
+  },
+  "group": "APPEAL_SEARCH",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-08-14",
+  "patient": {
+    "age": 39,
+    "member_id": "HMA-687713",
+    "name": "Harold Okafor",
+    "sex": "M"
+  },
+  "payer": "Harborline Medicare Advantage",
+  "payer_letter": "Harborline Medicare Advantage has reviewed claim A-1055 for MRI of the lumbar spine. Coverage requires documentation of a prior lumbar spine X-ray together with at least six weeks of conservative treatment, or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 60 days of this notice.",
+  "policy_id": "HMA-MRI-22",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

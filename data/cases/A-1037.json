@@ -1,0 +1,89 @@
+{
+  "billed_charges": 752,
+  "carc": 50,
+  "claim_id": "A-1037",
+  "cpt": "72148",
+  "date_of_service": "2026-07-26",
+  "denial_date": "2026-08-19",
+  "denial_reason": "The records submitted do not document a prior lumbar spine X-ray.",
+  "docs": [
+    {
+      "author": "Dr. Beatriz Campos",
+      "date": "2026-07-22",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 79-year-old woman with low back pain for about two months.",
+        "No fever, weight loss, saddle numbness or cancer history.",
+        "Blood pressure 128/82, pulse 74.",
+        "She started physical therapy three weeks ago.",
+        "Body mass index is 27.",
+        "Lives with her spouse.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-07-22",
+      "doc_id": "NUR",
+      "sentences": [
+        "Sleeps about six hours a night.",
+        "Lives with her spouse.",
+        "Body mass index is 27."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 301,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "VN-4"
+        ],
+        "status": "NOT_MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "VN-2"
+        ],
+        "status": "NOT_MET"
+      },
+      "XRAY_DONE": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [],
+        "status": "NOT_FOUND"
+      }
+    },
+    "injection": false,
+    "needs_search": false,
+    "route": "DROP"
+  },
+  "group": "DROP",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-07-22",
+  "patient": {
+    "age": 79,
+    "member_id": "HMA-440544",
+    "name": "Carmen Pulaski",
+    "sex": "F"
+  },
+  "payer": "Harborline Medicare Advantage",
+  "payer_letter": "Harborline Medicare Advantage has reviewed claim A-1037 for MRI of the lumbar spine. Coverage requires documentation of a prior lumbar spine X-ray together with at least six weeks of conservative treatment, or a red flag condition. The records submitted do not document a prior lumbar spine X-ray. You may request reconsideration within 60 days of this notice.",
+  "policy_id": "HMA-MRI-22",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

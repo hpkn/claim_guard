@@ -1,0 +1,106 @@
+{
+  "billed_charges": 933,
+  "carc": 50,
+  "claim_id": "A-1009",
+  "cpt": "72148",
+  "date_of_service": "2026-07-03",
+  "denial_date": "2026-08-04",
+  "denial_reason": "The records submitted do not document a prior lumbar spine X-ray.",
+  "docs": [
+    {
+      "author": "Dr. Alan Whitcombe",
+      "date": "2026-06-28",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 64-year-old woman with low back pain for about three months.",
+        "No fever, weight loss, saddle numbness or cancer history.",
+        "Lives with her spouse.",
+        "Sleeps about six hours a night.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-04-19",
+      "doc_id": "PT1",
+      "sentences": [
+        "Lives with her spouse.",
+        "Works as a school bus driver.",
+        "Initial evaluation for low back pain with right leg symptoms.",
+        "Drinks coffee twice a day.",
+        "Plan of care: physical therapy twice a week for eight weeks with a home exercise program.",
+        "Sleeps about six hours a night."
+      ],
+      "title": "Physical therapy initial evaluation",
+      "type": "therapy_note"
+    },
+    {
+      "author": "",
+      "date": "2026-06-26",
+      "doc_id": "PT2",
+      "sentences": [
+        "Patient attended 12 sessions between 2026-04-19 and 2026-06-23.",
+        "Works as a school bus driver.",
+        "Body mass index is 27.",
+        "Low back pain persists despite therapy."
+      ],
+      "title": "Physical therapy discharge summary",
+      "type": "therapy_note"
+    }
+  ],
+  "expected_payment": 410,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "PT2-1",
+          "PT2-4"
+        ],
+        "status": "MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-2"
+        ],
+        "status": "NOT_MET"
+      },
+      "XRAY_DONE": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [],
+        "status": "NOT_FOUND"
+      }
+    },
+    "injection": false,
+    "needs_search": false,
+    "route": "FETCH"
+  },
+  "group": "FETCH",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-06-28",
+  "patient": {
+    "age": 64,
+    "member_id": "HMA-960394",
+    "name": "Tasha Obuya",
+    "sex": "F"
+  },
+  "payer": "Harborline Medicare Advantage",
+  "payer_letter": "Harborline Medicare Advantage has reviewed claim A-1009 for MRI of the lumbar spine. Coverage requires documentation of a prior lumbar spine X-ray together with at least six weeks of conservative treatment, or a red flag condition. The records submitted do not document a prior lumbar spine X-ray. You may request reconsideration within 60 days of this notice.",
+  "policy_id": "HMA-MRI-22",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

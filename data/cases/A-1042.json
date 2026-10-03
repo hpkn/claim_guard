@@ -1,0 +1,102 @@
+{
+  "billed_charges": 3647,
+  "carc": 50,
+  "claim_id": "A-1042",
+  "cpt": "72148",
+  "date_of_service": "2026-08-14",
+  "denial_date": "2026-09-04",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Samuel Oyelaran",
+      "date": "2026-08-07",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 78-year-old man with low back pain for about three months.",
+        "Sleeps about six hours a night.",
+        "Blood pressure 128/82, pulse 74.",
+        "No fever, weight loss, saddle numbness or cancer history.",
+        "Body mass index is 27.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-07-17",
+      "doc_id": "PT1",
+      "sentences": [
+        "Initial evaluation for low back pain with left leg symptoms.",
+        "Works as a accountant.",
+        "Blood pressure 128/82, pulse 74.",
+        "Sleeps about six hours a night.",
+        "Plan of care: physical therapy twice a week for eight weeks with a home exercise program."
+      ],
+      "title": "Physical therapy initial evaluation",
+      "type": "therapy_note"
+    },
+    {
+      "author": "",
+      "date": "2026-08-02",
+      "doc_id": "PT2",
+      "sentences": [
+        "Body mass index is 27.",
+        "Patient attended 5 sessions over three weeks before the MRI order.",
+        "Works as a accountant."
+      ],
+      "title": "Physical therapy discharge summary",
+      "type": "therapy_note"
+    }
+  ],
+  "expected_payment": 1330,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "PT2-2"
+        ],
+        "status": "NOT_MET"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [],
+        "status": "NOT_FOUND"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "VN-4"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": true,
+    "route": "DROP"
+  },
+  "group": "DROP",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-08-07",
+  "patient": {
+    "age": 78,
+    "member_id": "NWH-535050",
+    "name": "Nikolai Mensah",
+    "sex": "M"
+  },
+  "payer": "Northwind Health",
+  "payer_letter": "Northwind Health has reviewed claim A-1042 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 180 days of this notice.",
+  "policy_id": "NWH-RAD-114",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

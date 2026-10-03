@@ -1,0 +1,87 @@
+{
+  "billed_charges": 3177,
+  "carc": 50,
+  "claim_id": "A-1020",
+  "cpt": "72148",
+  "date_of_service": "2026-07-20",
+  "denial_date": "2026-08-12",
+  "denial_reason": "The records submitted do not document radicular symptoms or a neurological deficit.",
+  "docs": [
+    {
+      "author": "Dr. Beatriz Campos",
+      "date": "2026-07-17",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 48-year-old woman with low back pain for about two months.",
+        "Sleeps about six hours a night.",
+        "Denies bowel or bladder changes, fever, weight loss or any history of cancer.",
+        "Blood pressure 128/82, pulse 74.",
+        "She started physical therapy three weeks ago.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-07-17",
+      "doc_id": "NUR",
+      "sentences": [
+        "Lives with her spouse.",
+        "Body mass index is 27."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 1396,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "VN-5"
+        ],
+        "status": "NOT_MET"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "NOT_FOUND"
+        ],
+        "evidence": [],
+        "status": "NOT_FOUND"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "VN-3"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": false,
+    "route": "DROP"
+  },
+  "group": "DROP",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-07-17",
+  "patient": {
+    "age": 48,
+    "member_id": "NWH-259097",
+    "name": "Lydia Obuya",
+    "sex": "F"
+  },
+  "payer": "Northwind Health",
+  "payer_letter": "Northwind Health has reviewed claim A-1020 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment or a red flag condition. The records submitted do not document radicular symptoms or a neurological deficit. You may request reconsideration within 180 days of this notice.",
+  "policy_id": "NWH-RAD-114",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

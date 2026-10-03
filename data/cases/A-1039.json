@@ -1,0 +1,122 @@
+{
+  "billed_charges": 3515,
+  "carc": 50,
+  "claim_id": "A-1039",
+  "cpt": "72148",
+  "date_of_service": "2026-07-09",
+  "denial_date": "2026-08-12",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Beatriz Campos",
+      "date": "2026-06-29",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 68-year-old woman with low back pain for about four months.",
+        "Lives with her spouse.",
+        "Sleeps about six hours a night.",
+        "No fever, weight loss, saddle numbness or cancer history.",
+        "Reports numbness and tingling along the outer right calf.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-04-13",
+      "doc_id": "PT1",
+      "sentences": [
+        "Lives with her spouse.",
+        "Initial evaluation for low back pain with right leg symptoms.",
+        "Plan of care: physical therapy twice a week for eight weeks with a home exercise program.",
+        "Body mass index is 27.",
+        "Works as a school bus driver.",
+        "Drinks coffee twice a day."
+      ],
+      "title": "Physical therapy initial evaluation",
+      "type": "therapy_note"
+    },
+    {
+      "author": "",
+      "date": "2026-06-26",
+      "doc_id": "PT2",
+      "sentences": [
+        "Drinks coffee twice a day.",
+        "Sleeps about six hours a night.",
+        "Works as a school bus driver.",
+        "Patient attended 18 sessions between 2026-04-13 and 2026-06-26.",
+        "Body mass index is 27.",
+        "Low back pain persists despite therapy."
+      ],
+      "title": "Physical therapy discharge summary",
+      "type": "therapy_note"
+    },
+    {
+      "author": "",
+      "date": "2026-06-29",
+      "doc_id": "NUR",
+      "sentences": [
+        "Blood pressure 128/82, pulse 74.",
+        "Lives with her spouse.",
+        "Works as a school bus driver."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 1325,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "PT2-4",
+          "PT2-6"
+        ],
+        "status": "MET"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "VN-5"
+        ],
+        "status": "MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-4"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": true,
+    "route": "APPEAL"
+  },
+  "group": "APPEAL_SEARCH",
+  "icd10": [
+    "M51.16"
+  ],
+  "order_date": "2026-06-29",
+  "patient": {
+    "age": 68,
+    "member_id": "NWH-560767",
+    "name": "Carmen Lindqvist",
+    "sex": "F"
+  },
+  "payer": "Northwind Health",
+  "payer_letter": "Northwind Health has reviewed claim A-1039 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 180 days of this notice.",
+  "policy_id": "NWH-RAD-114",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

@@ -1,0 +1,94 @@
+{
+  "billed_charges": 1188,
+  "carc": 50,
+  "claim_id": "A-1059",
+  "cpt": "72148",
+  "date_of_service": "2026-08-01",
+  "denial_date": "2026-08-20",
+  "denial_reason": "The records submitted do not document a prior lumbar spine X-ray.",
+  "docs": [
+    {
+      "author": "Dr. Alan Whitcombe",
+      "date": "2026-07-23",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 33-year-old woman with low back pain for about four months.",
+        "No fever, weight loss, saddle numbness or cancer history.",
+        "Drinks coffee twice a day.",
+        "Lives with her spouse.",
+        "Lumbar X-rays on 2026-06-23 showed mild degenerative change.",
+        "Symptoms persist after more than two months of physical therapy and daily naproxen.",
+        "Body mass index is 27.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-07-23",
+      "doc_id": "NUR",
+      "sentences": [
+        "Sleeps about six hours a night.",
+        "Drinks coffee twice a day.",
+        "Blood pressure 128/82, pulse 74.",
+        "Body mass index is 27."
+      ],
+      "title": "Nursing intake note",
+      "type": "nursing_note"
+    }
+  ],
+  "expected_payment": 475,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "VN-6"
+        ],
+        "status": "MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-2"
+        ],
+        "status": "NOT_MET"
+      },
+      "XRAY_DONE": {
+        "accept": [
+          "MET"
+        ],
+        "evidence": [
+          "VN-5"
+        ],
+        "status": "MET"
+      }
+    },
+    "injection": false,
+    "needs_search": false,
+    "route": "APPEAL"
+  },
+  "group": "APPEAL_VN",
+  "icd10": [
+    "M54.50"
+  ],
+  "order_date": "2026-07-23",
+  "patient": {
+    "age": 33,
+    "member_id": "HMA-164758",
+    "name": "Ruth Ridley",
+    "sex": "F"
+  },
+  "payer": "Harborline Medicare Advantage",
+  "payer_letter": "Harborline Medicare Advantage has reviewed claim A-1059 for MRI of the lumbar spine. Coverage requires documentation of a prior lumbar spine X-ray together with at least six weeks of conservative treatment, or a red flag condition. The records submitted do not document a prior lumbar spine X-ray. You may request reconsideration within 60 days of this notice.",
+  "policy_id": "HMA-MRI-22",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "new",
+  "submitted_doc_id": "VN"
+}

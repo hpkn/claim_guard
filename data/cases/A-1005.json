@@ -1,0 +1,105 @@
+{
+  "billed_charges": 2370,
+  "carc": 50,
+  "claim_id": "A-1005",
+  "cpt": "72148",
+  "date_of_service": "2026-08-07",
+  "denial_date": "2026-09-07",
+  "denial_reason": "The records submitted do not document at least six weeks of conservative treatment before imaging.",
+  "docs": [
+    {
+      "author": "Dr. Alan Whitcombe",
+      "date": "2026-08-01",
+      "doc_id": "VN",
+      "sentences": [
+        "Patient is a 34-year-old woman with low back pain for about two months.",
+        "Lives with her spouse.",
+        "Body mass index is 27.",
+        "Denies bowel or bladder changes, fever, weight loss or any history of cancer.",
+        "Pain radiates down the left leg to the foot.",
+        "Plan: MRI of the lumbar spine without contrast."
+      ],
+      "title": "Orthopedic clinic visit note",
+      "type": "visit_note"
+    },
+    {
+      "author": "",
+      "date": "2026-07-11",
+      "doc_id": "PT1",
+      "sentences": [
+        "Initial evaluation for low back pain with left leg symptoms.",
+        "Lives with her spouse.",
+        "Plan of care: physical therapy twice a week for eight weeks with a home exercise program.",
+        "Body mass index is 27."
+      ],
+      "title": "Physical therapy initial evaluation",
+      "type": "therapy_note"
+    },
+    {
+      "author": "",
+      "date": "2026-07-28",
+      "doc_id": "PT2",
+      "sentences": [
+        "Body mass index is 27.",
+        "Blood pressure 128/82, pulse 74.",
+        "Drinks coffee twice a day.",
+        "Patient attended 5 sessions over three weeks before the MRI order."
+      ],
+      "title": "Physical therapy discharge summary",
+      "type": "therapy_note"
+    }
+  ],
+  "expected_payment": 1075,
+  "gold": {
+    "criteria": {
+      "CONSERVATIVE_6W": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "PT2-4"
+        ],
+        "status": "NOT_MET"
+      },
+      "RADICULOPATHY": {
+        "accept": [
+          "MET",
+          "NOT_FOUND"
+        ],
+        "evidence": [
+          "VN-5"
+        ],
+        "status": "MET"
+      },
+      "RED_FLAG": {
+        "accept": [
+          "NOT_MET"
+        ],
+        "evidence": [
+          "VN-4"
+        ],
+        "status": "NOT_MET"
+      }
+    },
+    "injection": false,
+    "needs_search": true,
+    "route": "DROP"
+  },
+  "group": "DROP",
+  "icd10": [
+    "M54.16"
+  ],
+  "order_date": "2026-08-01",
+  "patient": {
+    "age": 34,
+    "member_id": "NWH-360735",
+    "name": "Harriet Alvarez",
+    "sex": "F"
+  },
+  "payer": "Northwind Health",
+  "payer_letter": "Northwind Health has reviewed claim A-1005 for MRI of the lumbar spine. Coverage requires documentation of at least six weeks of conservative treatment or a red flag condition. The records submitted do not document at least six weeks of conservative treatment before imaging. You may request reconsideration within 180 days of this notice.",
+  "policy_id": "NWH-RAD-114",
+  "procedure": "MRI lumbar spine without contrast",
+  "status": "draft",
+  "submitted_doc_id": "VN"
+}

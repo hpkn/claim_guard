@@ -1,0 +1,93 @@
+{
+  "approved_at": null,
+  "approved_by": null,
+  "argument_path": [
+    "CONSERVATIVE_6W",
+    "RADICULOPATHY"
+  ],
+  "argument_texts": {
+    "CONSERVATIVE_6W": "The medical record documents this criterion, as shown below.",
+    "RADICULOPATHY": "The medical record documents this criterion, as shown below."
+  },
+  "claim_id": "A-1006",
+  "criteria": [
+    {
+      "evidence": [],
+      "id": "RED_FLAG",
+      "reason": "The record explicitly denies bowel or bladder changes, fever, weight loss, and history of cancer (VN-3). There is no mention of saddle numbness, new bladder/bowel problems, infection signs, major trauma, unexplained weight loss, or rapidly worsening deficit. Therefore, there is no evidence to support the presence of a red flag.",
+      "source": null,
+      "status": "NOT_FOUND"
+    },
+    {
+      "evidence": [
+        "VN-5"
+      ],
+      "id": "CONSERVATIVE_6W",
+      "reason": "Symptoms persist after more than two months (approx. 8 weeks) of physical therapy and daily naproxen, which satisfies the six-week requirement.",
+      "source": "submitted",
+      "status": "MET"
+    },
+    {
+      "evidence": [
+        "VN-7"
+      ],
+      "id": "RADICULOPATHY",
+      "reason": "Patient reports numbness and tingling along the outer left calf, indicating pain or sensory changes in a nerve root pattern.",
+      "source": "submitted",
+      "status": "MET"
+    },
+    {
+      "evidence": [],
+      "id": "NEURO_DEFICIT",
+      "reason": "The record mentions patient-reported numbness and tingling (VN-7) but does not document objective findings such as measurable weakness, reflex loss, or sensory level deficits on examination. No sentence contradicts the possibility of a deficit either.",
+      "source": null,
+      "status": "NOT_FOUND"
+    }
+  ],
+  "days_left": 54,
+  "deadline": "2026-11-26",
+  "downgrades": 0,
+  "drop_reasons": [],
+  "error": null,
+  "expected_payment": 936,
+  "expected_value": 505.44,
+  "expired": false,
+  "flags": [],
+  "invalid_citations": [],
+  "llm_calls": 7,
+  "missing": [],
+  "model": "qwen3.5:4b",
+  "outputs": {
+    "letter_html": "out/letters/A-1006.html",
+    "letter_txt": "out/letters/A-1006.txt"
+  },
+  "payer": "Bluepeak Insurance",
+  "policy_id": "BPI-IMG-07",
+  "quote_violations": 0,
+  "route": "APPEAL",
+  "search_trail": [],
+  "shown_ids": [
+    "VN-1",
+    "VN-2",
+    "VN-3",
+    "VN-4",
+    "VN-5",
+    "VN-6",
+    "VN-7",
+    "VN-8",
+    "NUR-1",
+    "NUR-2",
+    "NUR-3"
+  ],
+  "status": "draft",
+  "timings": {
+    "llm_ms": 411476,
+    "seconds": 482.14
+  },
+  "tokens": {
+    "completion": 1677,
+    "prompt": 14456
+  },
+  "urgent": false,
+  "win_score": 0.54
+}

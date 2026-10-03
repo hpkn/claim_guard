@@ -1,0 +1,28 @@
+{
+  "appeals_expected_payment": 1530,
+  "appeals_expected_value": 826.2,
+  "appeals_ready": 2,
+  "assumptions": {
+    "source": "Premier Inc. 2024",
+    "source_fetch": "team assumption",
+    "win_score_appeal": 0.54,
+    "win_score_fetch": 0.2
+  },
+  "base_url": "http://localhost:11434/v1",
+  "batch_wall_seconds": 313.0,
+  "cases_processed": 5,
+  "counts": {
+    "APPEAL": 2,
+    "MANUAL": 3
+  },
+  "document_requests": 0,
+  "expired": 0,
+  "flagged_letters": 0,
+  "manual": 3,
+  "mean_seconds_per_case": 241.49,
+  "model": "qwen3.5:4b",
+  "no_appeal": 0,
+  "output_tokens_per_second": 15.54,
+  "quote_violations": 0,
+  "urgent_cases": 1
+}

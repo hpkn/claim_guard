@@ -1,0 +1,91 @@
+{
+  "approved_at": null,
+  "approved_by": null,
+  "argument_path": [
+    "RED_FLAG"
+  ],
+  "argument_texts": {
+    "RED_FLAG": "The medical record documents this criterion, as shown below."
+  },
+  "claim_id": "A-1021",
+  "criteria": [
+    {
+      "evidence": [
+        "VN-3"
+      ],
+      "id": "RED_FLAG",
+      "reason": "Patient explicitly denies fever, weight loss, saddle numbness, or cancer history.",
+      "source": "submitted",
+      "status": "MET"
+    },
+    {
+      "evidence": [],
+      "id": "XRAY_DONE",
+      "reason": "No sentence in the submitted document or search results explicitly states that a prior lumbar X-ray was performed. VN-5 mentions 'Lumbar X-rays on 2026-06-25', but does not use the phrase 'prior' or confirm they were part of the pre-imaging workup for this specific claim, which is required to meet the criterion based on strict evidence rules.",
+      "source": null,
+      "status": "NOT_FOUND"
+    },
+    {
+      "evidence": [],
+      "id": "CONSERVATIVE_6W",
+      "reason": "Evidence shows Naproxen started 2026-05-19 (approx. 7 weeks before MRI order), but no physical therapy sessions or other conservative treatments are documented in the search results to confirm a duration of six weeks.",
+      "source": null,
+      "status": "NOT_FOUND"
+    }
+  ],
+  "days_left": 12,
+  "deadline": "2026-10-15",
+  "downgrades": 0,
+  "drop_reasons": [],
+  "error": null,
+  "expected_payment": 455,
+  "expected_value": 245.7,
+  "expired": false,
+  "flags": [],
+  "invalid_citations": [],
+  "llm_calls": 5,
+  "missing": [],
+  "model": "qwen3.5:4b",
+  "outputs": {
+    "letter_html": "out/letters/A-1021.html",
+    "letter_txt": "out/letters/A-1021.txt"
+  },
+  "payer": "Harborline Medicare Advantage",
+  "policy_id": "HMA-MRI-22",
+  "quote_violations": 0,
+  "route": "APPEAL",
+  "search_trail": [
+    {
+      "criterion": "CONSERVATIVE_6W",
+      "query": "physical therapy sessions weeks",
+      "results": [
+        "MED-3"
+      ]
+    },
+    {
+      "criterion": "XRAY_DONE",
+      "query": "prior lumbar x-ray performed",
+      "results": []
+    }
+  ],
+  "shown_ids": [
+    "VN-1",
+    "VN-2",
+    "VN-3",
+    "VN-4",
+    "VN-5",
+    "VN-6",
+    "MED-3"
+  ],
+  "status": "draft",
+  "timings": {
+    "llm_ms": 237131,
+    "seconds": 313.0
+  },
+  "tokens": {
+    "completion": 1118,
+    "prompt": 9120
+  },
+  "urgent": true,
+  "win_score": 0.54
+}
